@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ligação ao CSS na pasta static, o flask identifica automaticamente a estrutura de pastas criada, por isso não é necessário colocar o caminho completo -->
+    <link type='text/css' href='{{ url_for('static', filename='quiz.css') }}' rel='stylesheet'>
+    <!-- link para o tipo de font utilizada no CSS através do GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600;900&display=swap" rel="stylesheet">
+    <title>Trabalho 3 PA</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="header">
+            <h1>Quiz de Programação</h1>
+        </div>
+
+        <div id="main">
+            <h3 id="TitlePerguntas">Perguntas</h3>
+            <div class="Perguntas">
+               <div id="pergunta1">
+
+                   <form id = "perguntaForm">
+
+                       <p>Pergunta 1</p>
+
+                       <input type="radio" id="verdadeiro" name="pergunta1" value="1">
+                       <label for="verdadeiro">Verdadeiro</label><br>
+                       <input type="radio" id="falso" name="pergunta1" value="0">
+                       <label for="falso">Falso</label>
+                   
+                       <p>Pergunta 2</p>
+                   
+                       <input type="radio" id="verdadeiro" name="pergunta2" value="1">
+                       <label for="verdadeiro">Verdadeiro</label><br>
+                       <input type="radio" id="falso" name="pergunta2" value="0">
+                       <label for="falso">Falso</label>
+                   
+                       <p>Pergunta 3</p>
+                  
+                       <input type="radio" id="verdadeiro" name="pergunta3" value="1">
+                       <label for="verdadeiro">Verdadeiro</label><br>
+                       <input type="radio" id="falso" name="pergunta3" value="0">
+                       <label for="falso">Falso</label>
+                   
+                       <p>Pergunta 4</p>
+                   
+                       <input type="radio" id="verdadeiro" name="pergunta4" value="1">
+                       <label for="verdadeiro">Verdadeiro</label><br>
+                       <input type="radio" id="falso" name="pergunta4" value="0">
+                       <label for="falso">Falso</label>
+                   
+                   <p>Pergunta 5</p>
+                   
+                       <input type="radio" id="verdadeiro" name="pergunta5" value="1">
+                       <label for="verdadeiro">Verdadeiro</label><br>
+                       <input type="radio" id="falso" name="pergunta5" value="0">
+                       <label for="falso">Falso</label>
+                   
+                   <p>Pergunta 6</p>
+                   
+                       <input type="radio" id="verdadeiro" name="pergunta6" value="1">
+                       <label for="verdadeiro">Verdadeiro</label><br>
+                       <input type="radio" id="falso" name="pergunta6" value="0">
+                       <label for="falso">Falso</label>
+                  
+                   <p>Pergunta 7</p>
+                   
+                       <input type="radio" id="verdadeiro" name="pergunta7" value="1">
+                       <label for="verdadeiro">Verdadeiro</label><br>
+                       <input type="radio" id="falso" name="pergunta7" value="0">
+                       <label for="falso">Falso</label>
+                   
+                   <p>Pergunta 8</p>
+                   
+                       <input type="radio" id="verdadeiro" name="pergunta8" value="1">
+                       <label for="verdadeiro">Verdadeiro</label><br>
+                       <input type="radio" id="falso" name="pergunta8" value="0">
+                       <label for="falso">Falso</label>
+                   
+                   <p>Pergunta 9</p>
+                   
+                       <input type="radio" id="verdadeiro" name="pergunta9" value="1">
+                       <label for="verdadeiro">Verdadeiro</label><br>
+                       <input type="radio" id="falso" name="pergunta9" value="0">
+                       <label for="falso">Falso</label>
+                   
+                   <p>Pergunta 10</p>
+                   
+                       <input type="radio" id="verdadeiro" name="pergunta10" value="1">
+                       <label for="verdadeiro">Verdadeiro</label><br>
+                       <input type="radio" id="falso" name="pergunta10" value="0">
+                       <label for="falso">Falso</label>
+                   
+                   <br><br>
+                   <div id="button">
+                   <!-- HTML !-->
+                   <button class="button-28" role="button">Submeter</button>
+                   </div>
+               </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <h3>Footer</h3>
+        </div>
+    </div>
+
+</body>
+</html>

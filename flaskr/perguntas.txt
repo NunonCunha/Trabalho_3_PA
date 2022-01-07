@@ -1,0 +1,8 @@
+teste
+verdadeiro
+
+teste2
+falso
+
+teste3
+falso

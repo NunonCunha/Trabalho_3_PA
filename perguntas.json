@@ -1,0 +1,20 @@
+{
+    
+    "Python é uma linguagem compilada." : "falso",
+    "Uma vantagem do Python é ser Open Source e Gratuito." : "verdadeiro", 
+    "KeyWords são palavras reservadas ao Pyton." : "verdadeiro",
+    "Namespace é um sistema de nomeação para evitar nomes únicos." : "falso",
+    "Uma variável global é declarada dentro de uma função." : "falso",
+    "A linguagem Python é case sensitive." : "verdadeiro", 
+    "O Python exige identação." : "verdadeiro",
+    "As tuplas são mutáveis nos seus valores." : "falso",
+    "Para escrever comentários utilizamos o caracter #." : "verdadeiro",
+    "Para converter uma string para minúscula utilizamos a função low()." : "falso", 
+    "A função len() devolve o tamanho de uma string." : "verdadeiro",
+    "Python não têm o conceito de OOP." : "falso",
+    "O Python não têm bibliotecas ." : "falso",
+    "Flask é uma biblioteca para trabalhar sockets." : "falso", 
+    "A função random.randint() randomiza números inteiros." : "verdadeiro",
+    "Pode ser criada uma lista dentro de um dicionário." : "verdadeiro" 
+    
+}

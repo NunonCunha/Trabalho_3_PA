@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/flaskr/static/quiz.css">
+    <!-- Ligação ao CSS na pasta static, o flask identifica automaticamente a estrutura de pastas criada, por isso não é necessário colocar o caminho completo -->
+    <link type='text/css' href='{{ url_for('static', filename='resultado.css') }}' rel='stylesheet'>
+    <!-- link para o tipo de font utilizada no CSS através do GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600;900&display=swap" rel="stylesheet">
+    <title>Trabalho 3 PA</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="header">
+            <h1>Quiz de Programação Python</h1>
+        </div>
+
+        <div id="main">
+
+            <h3>O resultado do Seu Exame</h3>
+
+            <p>Acertou em {{resultado}} respostas</p>
+            <br>
+            <h2>Perguntas falhadas</h2>
+            <p>{{fail1}}</p>
+            <br>
+            <p>{{fail2}}</p>
+            <br>
+            <p>{{fail3}}</p>
+            <br>
+            <p>{{fail4}}</p>
+            <br>
+            <p>{{fail5}}</p>
+            <br>
+            <div id="button">
+            
+            <button class="submit" role="button">Novo Quiz</button>
+            </div>
+
+        </div>
+
+        <div id="footer">
+            <h3>Realizado por Nuno Cunha nº 20202457</h3>
+        </div>
+    </div>
+
+</body>
+</html>

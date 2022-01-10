@@ -1,3 +1,5 @@
+
+/* Palete de cores para o site */
 /* CSS HEX 
 --charcoal: #264653ff;
 --persian-green: #2a9d8fff;
@@ -6,6 +8,7 @@
 --burnt-sienna: #e76f51ff;
 */
 
+/* definiçoes gerais da página */
 body{
     background-color: #fbfefbff;
     margin: 15px;
@@ -13,7 +16,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-
+/* Definições do header */
 #header{
     padding: 10px;
     background-color:#264653ff ;
@@ -22,10 +25,13 @@ body{
     border-radius: 10px;
 }
 
+/* Definições do conteúdo principal */
 #main{
     text-align: center;
+
 }
 
+/* definições do rodapé */
 #footer{
     padding: 10px;
     background-color: #264653ff;
@@ -34,6 +40,7 @@ body{
     border-radius: 10px;
 }
 
+/* definições do botão submeter */
 #button{
     padding-top: 12px;
     padding-bottom: 12px;
@@ -41,6 +48,7 @@ body{
     
 }
 
+/* Definições gerais do botão */
 .submit {
   appearance: none;
   background-color: transparent;
@@ -49,8 +57,7 @@ body{
   box-sizing: border-box;
   color: #3B3B3B;
   cursor: pointer;
-  display: inline-block;
-  
+  display: inline-block;  
   font-size: 18px;
   font-weight: 600;
   line-height: normal;
@@ -69,10 +76,12 @@ body{
   will-change: transform;
 }
 
+/* definições para quando estiver disabled */
 .submit:disabled {
   pointer-events: none;
 }
 
+/* definições quando se passa o rato por cima */
 .submit:hover {
   color: #fff;
   background-color: #264653ff;
@@ -80,6 +89,7 @@ body{
   transform: translateY(-2px);
 }
 
+/* definições quando está ativo */
 .submit:active {
   box-shadow: none;
   transform: translateY(0);

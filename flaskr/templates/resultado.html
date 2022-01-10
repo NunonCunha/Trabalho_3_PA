@@ -12,17 +12,15 @@
     <title>Trabalho 3 PA</title>
 </head>
 <body>
-
+    <!-- Div que contém todo o conteúdo do site -->
     <div class="container">
-
+        <!-- Div com o header do Site -->
         <div id="header">
             <h1>Quiz de Programação Python</h1>
         </div>
-
-        <div id="main">
-
-            <h3>O resultado do Seu Exame</h3>
-
+        <!-- Div que representa o conteúdo principal do site onde é apresentado o resultado enviado pelo servidor -->
+        <div id="main">            
+            <h2>O resultado do Seu Exame</h3>
             <p>Acertou em {{resultado}} respostas</p>
             <br>
             <h2>Perguntas falhadas</h2>
@@ -37,16 +35,16 @@
             <p>{{fail5}}</p>
             <br>
             <div id="button">
-            
-            <button class="submit" role="button">Novo Quiz</button>
+            <form method="GET">
+                <!-- Botão para iniciar um novo quiz -->
+                <button class="submit" type="submit" role="button">Novo Quiz</button>
+            </form>
             </div>
-
         </div>
-
+        <!-- div onde está inserido o rodapé -->
         <div id="footer">
             <h3>Realizado por Nuno Cunha nº 20202457</h3>
         </div>
     </div>
-
 </body>
 </html>

@@ -12,68 +12,56 @@
     <title>Trabalho 3 PA</title>
 </head>
 <body>
-
+    <!-- Div que contém todo o conteúdo do site -->
     <div class="container">
-
+        <!-- Div com o header do Site -->
         <div id="header">
             <h1>Quiz de Programação Python</h1>
         </div>
-
+        <!-- Div que representa o conteúdo principal do site -->
         <div id="main">
             <h3 id="TitlePerguntas">Perguntas</h3>
             <div class="Perguntas">
                <div id="pergunta1">
-
-                   <form action="/" enctype="multipart/form-data" method="post" id = "perguntaForm">
-
+                    <!-- Form onde é criado o quiz com as perguntas e opções de resposta -->
+                   <form action="/" enctype="multipart/form-data" method="POST" id = "perguntaForm">
                        <p>{{Pergunta1}}</p>
-
                        <input type="radio" id="verdadeiro" name="pergunta1" value="verdadeiro">
                        <label for="verdadeiro">Verdadeiro</label><br>
                        <input type="radio" id="falso" name="pergunta1" value="falso">
-                       <label for="falso">Falso</label>
-                   
-                       <p>{{Pergunta2}}</p>
-                   
+                       <label for="falso">Falso</label>                   
+                       <p>{{Pergunta2}}</p>                   
                        <input type="radio" id="verdadeiro" name="pergunta2" value="verdadeiro">
                        <label for="verdadeiro">Verdadeiro</label><br>
                        <input type="radio" id="falso" name="pergunta2" value="falso">
-                       <label for="falso">Falso</label>
-                   
-                       <p>{{Pergunta3}}</p>
-                  
+                       <label for="falso">Falso</label>                   
+                       <p>{{Pergunta3}}</p>                  
                        <input type="radio" id="verdadeiro" name="pergunta3" value="verdadeiro">
                        <label for="verdadeiro">Verdadeiro</label><br>
                        <input type="radio" id="falso" name="pergunta3" value="falso">
-                       <label for="falso">Falso</label>
-                   
-                       <p>{{Pergunta4}}</p>
-                   
+                       <label for="falso">Falso</label>                   
+                       <p>{{Pergunta4}}</p>                   
                        <input type="radio" id="verdadeiro" name="pergunta4" value="verdadeiro">
                        <label for="verdadeiro">Verdadeiro</label><br>
                        <input type="radio" id="falso" name="pergunta4" value="falso">
-                       <label for="falso">Falso</label>
-                   
-                       <p>{{Pergunta5}}</p>
-                   
+                       <label for="falso">Falso</label>                   
+                       <p>{{Pergunta5}}</p>                   
                        <input type="radio" id="verdadeiro" name="pergunta5" value="verdadeiro">
                        <label for="verdadeiro">Verdadeiro</label><br>
                        <input type="radio" id="falso" name="pergunta5" value="falso">
-                       <label for="falso">Falso</label>
-                                      
+                       <label for="falso">Falso</label>                                      
                    <br><br>
-                   <div id="button">
-                   <!-- HTML !-->
+                   <div id="button"> 
+                    <!-- botão para submeter os dados introduzidos pelo utilizador e enviar para o servidor -->
                    <button class="submit" role="button">Submeter</button>
                    </div>
                </div>
             </div>
         </div>
-
+        <!-- div onde está inserido o rodapé -->
         <div id="footer">
             <h3>Realizado por Nuno Cunha nº 20202457</h3>
         </div>
     </div>
-
 </body>
 </html>

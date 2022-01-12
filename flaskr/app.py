@@ -88,7 +88,7 @@ def tratamentoRespostas(res):
     for i in range (len(falhadas)):
         if falhadas[i] == None:
             falhadas[i] = ""
-
+    #return das respostas acertadas pelo utilizador
     return respostasCertas
     
 
@@ -100,7 +100,9 @@ app = Flask(__name__)
 @app.route("/", methods=['GET'])
 def get():
 
+    #chama a função random para as perguntas
     randomPR()
+    #Renderiza a página das perguntas
     return render_template("quiz.html", Pergunta1 = perguntasRandom[0], Pergunta2 = perguntasRandom[1], Pergunta3 = perguntasRandom[2], Pergunta4 = perguntasRandom[3], Pergunta5 = perguntasRandom[4])
     
 
@@ -114,12 +116,12 @@ def post():
     tratamentoRespostas(respostas)
     #variavel para amostra do resultado do teste
     result = tratamentoRespostas(respostas)
- 
+    #Renderiza a página de resultado
     return render_template("resultado.html", resultado = result, fail1 = falhadas[0], fail2 = falhadas[1], fail3 = falhadas[2], fail4 = falhadas[3], fail5 = falhadas[4] )
 
 
 # Iniciação da aplicação
 if __name__ == "__main__":
-
-    app.run(debug=True, port=8080)
+    #Inicia a aplicação
+    app.run(debug=False, port=8080)
 

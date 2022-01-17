@@ -112,12 +112,15 @@ def post():
     
     #recebe o dicionário de respostas enviadas pelo cliente
     respostas = request.form
-    #passa a variavel para a função de tratamento das respostas
-    tratamentoRespostas(respostas)
-    #variavel para amostra do resultado do teste
-    result = tratamentoRespostas(respostas)
-    #Renderiza a página de resultado
-    return render_template("resultado.html", resultado = result, fail1 = falhadas[0], fail2 = falhadas[1], fail3 = falhadas[2], fail4 = falhadas[3], fail5 = falhadas[4] )
+    if len(respostas) < 5:
+        return render_template("error.html")
+    else:
+        #passa a variavel para a função de tratamento das respostas
+        tratamentoRespostas(respostas)
+        #variavel para amostra do resultado do teste
+        result = tratamentoRespostas(respostas)
+        #Renderiza a página de resultado
+        return render_template("resultado.html", resultado = result, fail1 = falhadas[0], fail2 = falhadas[1], fail3 = falhadas[2], fail4 = falhadas[3], fail5 = falhadas[4] )
 
 
 # Iniciação da aplicação

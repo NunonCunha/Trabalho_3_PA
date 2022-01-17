@@ -16,28 +16,15 @@
     <div class="container">
         <!-- Div com o header do Site -->
         <div id="header">
-            <h1>Resultado</h1>
+            <h1>Erro</h1>
         </div>
-        <!-- Div que representa o conteúdo principal do site onde é apresentado o resultado enviado pelo servidor -->
-        <div id="main">            
-            <h2>O resultado do Seu Exame</h3>
-            <p>Acertou em {{resultado}} respostas</p>
-            <br>
-            <h2>Perguntas falhadas</h2>
-            <p>{{fail1}}</p>
-            <br>
-            <p>{{fail2}}</p>
-            <br>
-            <p>{{fail3}}</p>
-            <br>
-            <p>{{fail4}}</p>
-            <br>
-            <p>{{fail5}}</p>
-            <br>
-            <div id="button">
+        <!-- Div que representa o conteúdo principal do site onde é apresentado o Erro por não preencher todos os campos -->
+        <div id="main">   
+            <p>Os campos não foram preenchidos correctamente</p>        
+
             <form method="GET">
-                <!-- Botão para iniciar um novo quiz -->
-                <button class="submit" type="submit" role="button">Novo Quiz</button>
+                <!-- Botão para voltar ao quiz -->
+                <button class="submit" type="submit" role="button">Voltar</button>
             </form>
             </div>
         </div>
